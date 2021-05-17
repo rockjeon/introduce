@@ -1,0 +1,57 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockjeon</title>
+    <link rel="stylesheet" href="{%static 'login.css'%}">
+    <link rel="stylesheet" href="{%static 'bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'index.css'%}">
+</head>
+
+<body>
+    <div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="{% url 'index'%}">
+                    <img src="{%static 'logo1.png'%}" alt="logo" width='45px' height="45px">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">우.행.시</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">여기는 뭘할까?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">스케쥴</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Q.T</a>
+            </li>
+            <li class="nav-item">
+                {% if user.is_authenticated %}
+                <a class="nav-link logout" href="{%url 'logout'%}" onclick="change();">로그아웃</a>
+                {%else%}
+                <a class="nav-link" href="{%url 'login'%}">로그인</a>
+                {%endif%}
+            </li>
+        </ul>
+        {%block content%}
+        {%endblock%}
+        <footer class="container">
+            <p class="small tm-footer-text">Copyright &copy; 2021 rockjeon | <a
+                    href="https://github.com/rockjeon">github</a> | <a href="https://velog.io/@rockjeon">blog</a> |
+                Design:
+                rockjeon
+        </footer>
+        <script>
+            function change() {
+                alert('로그아웃 되었습니다.')
+            }
+        </script>
+</body>
+
+</html>

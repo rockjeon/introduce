@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<div class="container">
+    <form method="POST" class="post-form" action="{%url 'login'%}">
+        {% csrf_token %}
+        <h1>로그인</h1>
+        <div class="form-group">
+            <label for="username">ID</label>
+            <input type="text" class="form-control" id="username" name="username" value="{{form.username.value | default_if_none:''}}">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="{{form.password.value | default_if_none:''}}">
+        </div>
+        <button type="submit" class="btn btn-primary">로그인</button>
+    </form>
+</div>
+{%endblock%}
