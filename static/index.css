@@ -1,15 +1,15 @@
-body {
+/* body {
     margin: 0;
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); 
     height: 48px;
-}
+} 
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .nav-link {
@@ -24,4 +24,4 @@ a:hover {
 
 .tm-footer-text {
     text-align: center;
-}
+} */

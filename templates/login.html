@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 {%load static%}
 {%block content%}
+<link rel="stylesheet" href="{%static 'login.css'%}">
 <div class="container">
     <form method="POST" class="post-form" action="{%url 'login'%}">
         {% csrf_token %}
