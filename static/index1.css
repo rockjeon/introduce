@@ -11,7 +11,7 @@ COLOR CODES
   
 */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -19,10 +19,10 @@ COLOR CODES
 body {
   background-color: #eee;
   color: #6c6c6c;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro KR", "SF Pro Text", "Yoon Gothic", "Myriad Set Pro", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
-}
+} */
 
 .tm-container {
   background-color: white;
@@ -106,19 +106,23 @@ body {
 p,
 ul {
   line-height: 2;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 ul {
   margin: 0;
+
 }
+
 ul.dashed {
   list-style-type: none;
 }
-ul.dashed > li {
+
+ul.dashed>li {
   text-indent: -5px;
 }
-ul.dashed > li:before {
+
+ul.dashed>li:before {
   content: "-";
   margin-right: 5px;
   text-indent: -5px;
@@ -185,7 +189,8 @@ a.btn:hover {
   color: #cc0064;
   text-decoration: none;
 }
-.tm-footer-text{
+
+.tm-footer-text {
   text-align: center;
 }
 
@@ -194,6 +199,7 @@ a.btn:hover {
     max-width: none;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -217,6 +223,7 @@ a.btn:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
   .tm-section-left {
     margin: 50px auto;
   }

@@ -1,5 +1,10 @@
 form {
     margin: 50px;
+    width: 50%;
+}
+.form-control{
+    border-radius: 10px;
+    height: 40px;
 }
 form h1 {
     font-weight: 700;
@@ -7,7 +12,9 @@ form h1 {
 
 .form-group {
     margin-top: 40px;
+    
 }
+
 button {
     margin-top: 40px;
 }

@@ -13,6 +13,7 @@
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password" value="{{form.password.value | default_if_none:''}}">
+            <small><p>비밀번호는 8자리~12자리 이내로 설정해주세요.</p></small>
         </div>
         <button type="submit" class="btn btn-primary">로그인</button>
     </form>
