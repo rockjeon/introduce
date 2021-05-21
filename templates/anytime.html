@@ -2,8 +2,10 @@
 {%load static%}
 {%block content%}
 <link rel="stylesheet" href="{%static 'anytime.css'%}">
-<p id="header"># Momories..</p>
-
+<div class="detail-nav">
+    <p id="header"># Momories..</p>
+    <a href="{%url 'anytime:create'%}">추억을 담아보세요.</a>
+</div>
 <div class="container1">
     <section class="article">
         <img src="{%static 'content5.jpeg'%}" alt="이미지1">
@@ -29,6 +31,12 @@
     <section class="article">
         <img src="" alt="이미지3">
         <span class="imgtext">이미지를 업데이트 해주세요.</span>
-    </section>
+    </section>    
+</div>
+<div class="paging">
+<input type="radio" name="paginator" id="paginator">
+<!-- <input type="radio" name="paginator" id="paginator">
+<input type="radio" name="paginator" id="paginator">
+<input type="radio" name="paginator" id="paginator"> -->
 </div>
 {%endblock%}

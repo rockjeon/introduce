@@ -2,10 +2,25 @@
     margin: 0;
     padding: 0;
 }
+.detail-nav {
+    display: flex;
+    background-color:beige;
+}
+.detail-nav>a {
+    margin-left: auto;
+    border: 1px solid balck;
+    /* border:1px solid black; */
+    margin-top: 15px;
+    color:black;
+    
+}
+a:hover {
+    text-decoration:none;
+}
 #header {
     font-size:2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:beige;
+
 }
 .container1 {
     display:grid;
@@ -45,6 +60,14 @@
     
 }
 
+.paging {
+    display:flex;
+    justify-content:center;
+
+}
+.paging>input {
+    margin-left: 5px;
+}
 
 @media only screen and (max-width:500px) {
     .container1 {
